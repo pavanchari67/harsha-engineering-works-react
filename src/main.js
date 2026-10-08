@@ -378,7 +378,7 @@ const flushJobs = () => {
 const fetchJobs = async () => {
     try {
         const res = await fetch(
-            "http://localhost:5000/api/jobs"
+            "https://harsha-engineering-works-react.onrender.com/api/jobs"
         );
 
         if (!res.ok) {
@@ -1054,7 +1054,7 @@ const handleNameEdit = () => {
                 str;
 
             fetch(
-                "http://localhost:5000/api/auth/update-name",
+                "https://harsha-engineering-works-react.onrender.com/api/auth/update-name",
                 {
                     method: "POST",
 
@@ -1310,7 +1310,7 @@ const reqClientCode = async (mode) => {
 
         const res =
             await fetch(
-                "http://localhost:5000/api/auth/send-otp",
+                "https://harsha-engineering-works-react.onrender.com/api/auth/send-otp",
                 {
                     method: "POST",
 
@@ -1450,7 +1450,7 @@ const verifyClientCode = async () => {
 
         const res =
             await fetch(
-                "http://localhost:5000/api/auth/verify-otp",
+                "https://harsha-engineering-works-react.onrender.com/api/auth/verify-otp",
                 {
                     method: "POST",
 
@@ -1965,7 +1965,7 @@ const submitJobRequest = async () => {
 
         const res =
             await fetch(
-                "http://localhost:5000/api/jobs",
+                "https://harsha-engineering-works-react.onrender.com/api/jobs",
                 {
                     method: "POST",
 
@@ -2420,7 +2420,7 @@ const saveJobStatus = async () => {
 
         const res =
             await fetch(
-                `http://localhost:5000/api/jobs/${currentJob.id}/status`,
+                `https://harsha-engineering-works-react.onrender.com/api/jobs/${currentJob.id}/status`,
                 {
                     method: "PATCH",
 
